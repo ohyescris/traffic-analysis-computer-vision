@@ -26,6 +26,13 @@ Este projeto foi construído como exercício prático para aprofundar conhecimen
 - Densidade de fluxo concentrada corretamente na via principal após correção de viés do heatmap (normalização por trajetória).
 - Distribuição de direção com picos claros, consistentes com uma via de fluxo bidirecional.
 
+### Distribuição de direção e velocidade
+
+![Distribuições de direção e velocidade](resultados/distribuicoes.png)
+
+- **Direção**: os ângulos de deslocamento se concentram em duas faixas opostas (~0° e ~180°), coerente com uma via de mão dupla — sinal de que o tracking captura corretamente o sentido real do fluxo, e não ruído aleatório.
+- **Velocidade**: distribuição concentrada em uma faixa relativamente estreita de valores (px/s), com poucos outliers — esperado para veículos em fluxo livre na mesma via, sem congestionamento na sequência analisada. Por não haver calibração de câmera, os valores são relativos e não representam km/h reais (ver [Limitações](#limitações)).
+
 ## Decisões técnicas e problemas resolvidos
 
 Alguns desafios reais do desenvolvimento, documentados por transparência técnica:
