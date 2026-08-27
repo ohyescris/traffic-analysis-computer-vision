@@ -1,0 +1,9 @@
+torch
+kaggle
+gdown
+ultralytics
+opencv-python
+matplotlib
+numpy
+scipy
+pandas
